@@ -14,24 +14,31 @@
 
 ### Installation
 ```bash
-npm i -g bhailang
+# Clone the repository
+git clone https://github.com/ikuldeepkumawat/kudari.git
+cd kudarilang
+
+# Install dependencies
+npm install
+
+# Install globally (optional)
+npm install -g .
 ```
 
 ### Usage
 
-Create a new file (`test.bhai`)
-
-Edit the file with a text editor. You can also try out your code on Bhai Lang PlayGround
-
-```bhai
-hi bhai
-bol bhai "Hello bhai";
-bye bhai
-```
-
-### Run
 ```bash
-bhai test.bhai
+# Run a KudariLang file
+kudari hello.kudari
+
+# Create example files
+kudari --example
+
+# Show syntax guide
+kudari --syntax
+
+# Show help
+kudari --help
 ```
 
 ## 📝 Syntax Examples

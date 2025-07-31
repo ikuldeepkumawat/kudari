@@ -1,6 +1,6 @@
 ### 6. **.gitignore**
 
-Dependencies
+# Dependencies
 
 node_modules/
 npm-debug.log*
@@ -8,7 +8,7 @@ yarn-debug.log*
 yarn-error.log*
 
 
-Runtime
+# Runtime
 
 *.log
 .DS_Store
@@ -19,7 +19,7 @@ Runtime
 .env.production.local
 
 
-IDE
+# IDE
 
 .vscode/
 .idea/
@@ -27,42 +27,6 @@ IDE
 *.swo
 
 
-OS
+# OS
 
 Thumbs.db
----
-
-## 🛠️ Setup Instructions
-
-### 1. **Create Project Structure**
-```bash
-mkdir kudarilang
-cd kudarilang
-mkdir bin lib examples tests
-
-2. Copy All Files
-
-Copy each file content to respective locations
-Make sure bin/kudari.js is executable: chmod +x bin/kudari.js
-
-3. Install & Test
-
-npm install
-node bin/kudari.js --example    # Create examples
-node bin/kudari.js examples/hello.kudari    # Test
-
-4. Global Installation (Optional)
-
-npm install -g .
-kudari --help    # Now works from anywhere!
-
-🎉 Ready to Use!
-Your KudariLang is now complete with:
-
-✅ Professional CLI with colors & help
-✅ Enhanced parser with more features
-✅ Example files for learning
-✅ Complete documentation
-✅ NPM package ready for publishing
-
-Run kudari --example to get started with sample programs!
