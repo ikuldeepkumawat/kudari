@@ -1,0 +1,25 @@
+// Conditional Examples
+kudari shuru karo
+
+ginti age kar do 25
+ginti score kar do 85
+
+bolo "Age Check:"
+agar age >= 60 to
+    bolo "👴 Senior Citizen"
+warna agar age >= 18 to
+    bolo "🧑 Adult"
+warna
+    bolo "🧒 Minor"
+
+bolo "Grade Check:"
+agar score >= 90 to
+    bolo "Grade: A+"
+warna agar score >= 80 to
+    bolo "Grade: A"
+warna agar score >= 70 to
+    bolo "Grade: B"
+warna
+    bolo "Grade: C"
+
+kudari khatam karo

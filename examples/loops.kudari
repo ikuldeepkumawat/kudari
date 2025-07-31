@@ -1,0 +1,18 @@
+// Loop Examples
+kudari shuru karo
+
+bolo "=== Counting 1 to 5 ==="
+ginti i kar do 1
+jab tak i <= 5 to
+    bolo "Count: " add karo i
+    ginti i kar do i add karo 1
+
+bolo "=== Countdown from 3 ==="
+ginti countdown kar do 3
+jab tak countdown > 0 to
+    bolo countdown
+    ginti countdown kar do countdown kam karo 1
+
+bolo "🚀 Blast off!"
+
+kudari khatam karo

@@ -1,0 +1,31 @@
+{
+  "name": "kudarilang",
+  "version": "2.0.0",
+  "description": "KudariLang - Hindi Programming Language that transpiles to JavaScript",
+  "main": "lib/parser.js",
+  "bin": {
+    "kudari": "./bin/kudari.js"
+  },
+  "scripts": {
+    "test": "node bin/kudari.js tests/test.kudari",
+    "example": "node bin/kudari.js --example",
+    "install-global": "npm install -g ."
+  },
+  "keywords": [
+    "kudari",
+    "hindi",
+    "programming-language",
+    "transpiler",
+    "cli",
+    "javascript"
+  ],
+  "author": "Kuldeep",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuldeep/kudarilang.git"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

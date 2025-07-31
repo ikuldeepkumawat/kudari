@@ -1,0 +1,24 @@
+// KudariLang Test File
+kudari shuru karo
+
+bolo "=== KudariLang Test ==="
+
+ginti naam kar do "Kuldeep"
+ginti age kar do 25
+
+bolo "Namaste " add karo naam
+bolo "Age: " add karo age
+
+agar age >= 18 to
+    bolo "Adult hai!"
+warna
+    bolo "Minor hai!"
+
+ginti i kar do 1
+jab tak i <= 3 to
+    bolo "Count: " add karo i
+    ginti i kar do i add karo 1
+
+bolo "Test complete!"
+
+kudari khatam karo

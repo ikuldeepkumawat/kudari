@@ -1,0 +1,21 @@
+// Simple Calculator
+kudari shuru karo
+
+ginti a kar do 10
+ginti b kar do 5
+
+bolo "=== Calculator ==="
+bolo "a = " add karo a
+bolo "b = " add karo b
+
+ginti sum kar do a add karo b
+ginti diff kar do a kam karo b
+ginti product kar do a guna karo b
+ginti quotient kar do a bhag karo b
+
+bolo "Addition: " add karo sum
+bolo "Subtraction: " add karo diff
+bolo "Multiplication: " add karo product
+bolo "Division: " add karo quotient
+
+kudari khatam karo
