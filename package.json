@@ -1,6 +1,6 @@
 {
   "name": "kudarilang",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "KudariLang - Hindi Programming Language that transpiles to JavaScript",
   "main": "lib/parser.js",
   "bin": {
