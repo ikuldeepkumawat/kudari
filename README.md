@@ -15,7 +15,7 @@
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/kuldeep/kudarilang.git
+git clone https://github.com/ikuldeepkumawat/kudari.git
 cd kudarilang
 
 # Install dependencies
