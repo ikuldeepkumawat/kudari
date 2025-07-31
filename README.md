@@ -14,66 +14,66 @@
 
 ### Installation
 ```bash
-# Clone the repository
-git clone https://github.com/ikuldeepkumawat/kudari.git
-cd kudarilang
+npm i -g bhailang
+```
 
-# Install dependencies
-npm install
+### Usage
 
-# Install globally (optional)
-npm install -g .
+Create a new file (`test.bhai`)
 
-Usage
+Edit the file with a text editor. You can also try out your code on Bhai Lang PlayGround
 
-# Run a KudariLang file
-kudari hello.kudari
+```bhai
+hi bhai
+bol bhai "Hello bhai";
+bye bhai
+```
 
-# Create example files
-kudari --example
+### Run
+```bash
+bhai test.bhai
+```
 
-# Show syntax guide
-kudari --syntax
+## 📝 Syntax Examples
 
-# Show help
-kudari --help
-
-📝 Syntax Examples
-
-Variables & Output
-
+### Variables & Output
+```kudari
 ginti naam kar do "Kuldeep"
 ginti age kar do 25
 bolo "Namaste " add karo naam
+```
 
-Conditions
-
+### Conditions
+```kudari
 agar age >= 18 to
     bolo "Adult"
 warna
     bolo "Minor"
+```
 
-Loops
-
+### Loops
+```kudari
 ginti i kar do 1
 jab tak i <= 5 to
     bolo i
     ginti i kar do i add karo 1
+```
 
-🎯 Language Reference
+## 🎯 Language Reference
 
-KudariLang          JavaScript                 Description
-ginti x kar do 10   let x = 10                 Variable declaration
-bolo "Hello"        console.log("Hello")       Print statement
-add karo            +                          Addition
-kam karo            -                          Subtraction
-guna karo           *                          Multiplication
-bhag karo           /                          Division
-agar...to           if                         Conditional
-warna               else                       Else statement
-jab tak...to        while                      Loop
+| KudariLang | JavaScript | Description |
+|------------|------------|-------------|
+| `ginti x kar do 10` | `let x = 10` | Variable declaration |
+| `bolo "Hello"` | `console.log("Hello")` | Print statement |
+| `add karo` | `+` | Addition |
+| `kam karo` | `-` | Subtraction |
+| `guna karo` | `*` | Multiplication |
+| `bhag karo` | `/` | Division |
+| `agar...to` | `if` | Conditional |
+| `warna` | `else` | Else statement |
+| `jab tak...to` | `while` | Loop |
 
-🤝 Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch
