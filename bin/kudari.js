@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+
 const { parseKudariLang } = require('../lib/parser');
 
 // Colors for better output
@@ -179,6 +180,21 @@ kudari khatam karo`
   });
 }
 
+// === KudariLang marker validation ===
+function validateKudariMarkers(code) {
+  const hasStart = code.includes('kudari shuru karo');
+  const hasEnd = code.includes('kudari khatam karo');
+  if (!hasStart || !hasEnd) {
+    let missing = [];
+    if (!hasStart) missing.push('"kudari shuru karo"');
+    if (!hasEnd) missing.push('"kudari khatam karo"');
+    throw new Error(
+      `Missing required KudariLang marker(s): ${missing.join(' and ')}.\n` +
+      `Please ensure your code starts with "kudari shuru karo" and ends with "kudari khatam karo".`
+    );
+  }
+}
+
 const args = process.argv.slice(2);
 
 if (args.length === 0 || args[0] === '--help') {
@@ -217,14 +233,17 @@ if (!filePath.endsWith('.kudari')) {
 
 try {
   const code = fs.readFileSync(path.resolve(filePath), 'utf-8');
-  
+
+  // === Validate KudariLang markers ===
+  validateKudariMarkers(code);
+
   if (process.env.KUDARI_DEBUG !== '1') {
     console.log(`${colors.blue}🚀 Running: ${path.basename(filePath)}${colors.reset}`);
     console.log('─'.repeat(40));
   }
-  
+
   const jsCode = parseKudariLang(code);
-  
+
   // Debug mode
   if (process.env.KUDARI_DEBUG === '1') {
     console.log(`${colors.yellow}[DEBUG] Input KudariLang:${colors.reset}`);
@@ -234,17 +253,22 @@ try {
     console.log(`${colors.yellow}[DEBUG] Output:${colors.reset}`);
     console.log('─'.repeat(40));
   }
-  
+
   eval(jsCode);
-  
+
   if (process.env.KUDARI_DEBUG !== '1') {
     console.log('─'.repeat(40));
     console.log(`${colors.green}✅ Program completed successfully${colors.reset}`);
   }
-  
+
 } catch (err) {
   console.log('─'.repeat(40));
-  if (err.name === 'SyntaxError') {
+  if (
+    err.message &&
+    err.message.includes('Missing required KudariLang marker')
+  ) {
+    console.error(`${colors.red}❌ KudariLang Error: ${err.message}${colors.reset}`);
+  } else if (err.name === 'SyntaxError') {
     console.error(`${colors.red}❌ Syntax Error: ${err.message}${colors.reset}`);
   } else {
     console.error(`${colors.red}❌ Runtime Error: ${err.message}${colors.reset}`);

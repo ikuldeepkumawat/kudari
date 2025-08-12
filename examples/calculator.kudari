@@ -1,8 +1,8 @@
 // Simple Calculator
 kudari shuru karo
 
-ginti a kar do 10
-ginti b kar do 5
+ginti a kar do 15
+ginti b kar do 10
 
 bolo "=== Calculator ==="
 bolo "a = " add karo a

@@ -1,0 +1,142 @@
+{
+  "name": "KudariLang Dark",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1e1e1e",
+    "editor.foreground": "#d4d4d4",
+    "editorLineNumber.foreground": "#858585",
+    "editorLineNumber.activeForeground": "#c6c6c6"
+  },
+  "tokenColors": [
+    {
+      "name": "Comments",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#6A9955"
+      }
+    },
+    {
+      "name": "Strings",
+      "scope": [
+        "string.quoted",
+        "string.quoted.double"
+      ],
+      "settings": {
+        "foreground": "#CE9178"
+      }
+    },
+    {
+      "name": "Numbers",
+      "scope": [
+        "constant.numeric"
+      ],
+      "settings": {
+        "foreground": "#B5CEA8"
+      }
+    },
+    {
+      "name": "Program Markers - Start/End",
+      "scope": [
+        "keyword.control.program.start.kudarilang",
+        "keyword.control.program.end.kudarilang",
+        "keyword.control.program.kudarilang"
+      ],
+      "settings": {
+        "foreground": "#FF6B6B",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Variable Declaration - ginti",
+      "scope": [
+        "keyword.declaration.variable.kudarilang"
+      ],
+      "settings": {
+        "foreground": "#FFD700",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Assignment - kar do",
+      "scope": [
+        "keyword.operator.assignment.kudarilang"
+      ],
+      "settings": {
+        "foreground": "#FFD700",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Arithmetic Operators",
+      "scope": [
+        "keyword.operator.arithmetic.kudarilang"
+      ],
+      "settings": {
+        "foreground": "#4ECDC4",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Comparison Operators",
+      "scope": [
+        "keyword.operator.comparison.kudarilang"
+      ],
+      "settings": {
+        "foreground": "#9B59B6",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Logical Operators",
+      "scope": [
+        "keyword.operator.logical.kudarilang"
+      ],
+      "settings": {
+        "foreground": "#E67E22"
+      }
+    },
+    {
+      "name": "Functions - bolo",
+      "scope": [
+        "support.function.builtin.kudarilang"
+      ],
+      "settings": {
+        "foreground": "#DCDCAA",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Conditionals",
+      "scope": [
+        "keyword.control.conditional.kudarilang"
+      ],
+      "settings": {
+        "foreground": "#569CD6",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Loops",
+      "scope": [
+        "keyword.control.loop.kudarilang"
+      ],
+      "settings": {
+        "foreground": "#C586C0",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": [
+        "variable.other.kudarilang"
+      ],
+      "settings": {
+        "foreground": "#9CDCFE"
+      }
+    }
+  ]
+}

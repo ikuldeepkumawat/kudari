@@ -1,0 +1,108 @@
+{
+  "KudariLang Basic Template": {
+    "prefix": "kudari",
+    "body": [
+      "// ${1:Program description}",
+      "kudari shuru karo",
+      "",
+      "${2:// Your code here}",
+      "",
+      "kudari khatam karo"
+    ],
+    "description": "Basic KudariLang program template"
+  },
+  "Variable Declaration": {
+    "prefix": "ginti",
+    "body": [
+      "ginti ${1:variableName} kar do ${2:value}"
+    ],
+    "description": "Declare a variable in KudariLang"
+  },
+  "Print Statement": {
+    "prefix": "bolo",
+    "body": [
+      "bolo ${1:\"Hello World\"}"
+    ],
+    "description": "Print/output statement"
+  },
+  "If Condition": {
+    "prefix": "agar",
+    "body": [
+      "agar ${1:condition} to",
+      "    ${2:// code}",
+      "warna",
+      "    ${3:// else code}"
+    ],
+    "description": "If-else condition block"
+  },
+  "While Loop": {
+    "prefix": "jabtak",
+    "body": [
+      "jab tak ${1:condition} to",
+      "    ${2:// loop body}",
+      "    ginti ${3:counter} kar do ${3:counter} add karo 1"
+    ],
+    "description": "While loop in KudariLang"
+  },
+  "Hello World": {
+    "prefix": "hello",
+    "body": [
+      "// Hello World in KudariLang",
+      "kudari shuru karo",
+      "",
+      "ginti naam kar do \"${1:Duniya}\"",
+      "bolo \"Namaste \" add karo naam",
+      "bolo \"KudariLang mein aapka swagat hai!\"",
+      "",
+      "kudari khatam karo"
+    ],
+    "description": "Complete Hello World program"
+  },
+  "Calculator Template": {
+    "prefix": "calc",
+    "body": [
+      "// Calculator in KudariLang",
+      "kudari shuru karo",
+      "",
+      "ginti a kar do ${1:10}",
+      "ginti b kar do ${2:5}",
+      "",
+      "ginti sum kar do a add karo b",
+      "ginti diff kar do a kam karo b",
+      "ginti product kar do a guna karo b",
+      "ginti quotient kar do a bhag karo b",
+      "",
+      "bolo \"Addition: \" add karo sum",
+      "bolo \"Subtraction: \" add karo diff",
+      "bolo \"Multiplication: \" add karo product",
+      "bolo \"Division: \" add karo quotient",
+      "",
+      "kudari khatam karo"
+    ],
+    "description": "Basic calculator template"
+  },
+  "Counter Loop": {
+    "prefix": "counter",
+    "body": [
+      "ginti ${1:i} kar do ${2:1}",
+      "jab tak ${1:i} <= ${3:10} to",
+      "    bolo \"Count: \" add karo ${1:i}",
+      "    ginti ${1:i} kar do ${1:i} add karo 1"
+    ],
+    "description": "Counter loop template"
+  },
+  "Age Check": {
+    "prefix": "agecheck",
+    "body": [
+      "ginti age kar do ${1:25}",
+      "",
+      "agar age >= 60 to",
+      "    bolo \"👴 Senior Citizen\"",
+      "warna agar age >= 18 to",
+      "    bolo \"🧑 Adult\"",
+      "warna",
+      "    bolo \"🧒 Minor\""
+    ],
+    "description": "Age check conditional example"
+  }
+}

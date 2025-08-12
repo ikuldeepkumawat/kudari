@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>KudariLang Playground</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f0f23">
+  <link rel="icon" href="assets/image/favicon.ico" type="image/x-icon">
+  <meta name="title" content="KudariLang Playground">
+  <meta name="keywords" content="KudariLang, Hindi programming language, code playground, online coding, programming, KudariLang examples">
+  <meta name="author" content="kuldeep kumawat">
+  <meta name="description" content="KudariLang is a Hindi programming language. This playground allows you to write and execute KudariLang code directly in your browser.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="./assets/image/kudarilang-dark.png" width="150px" alt="logo kudarilang" />
+    <div class="subtitle">A Hindi Programming Language</div>
+    <div class="author">Made by 
+      <a href="https://in.linkedin.com/in/ikuldeepkumawat" target="_blank">@kuldeepkumawat</a> and 
+      <a href="https://in.linkedin.com/in/chetan-choudhary-30192b115" target="_blank">@chetanchoudhary</a>
+    </div>
+  </div>
+  
+  <div class="examples-section">
+    <div class="examples-container">
+      <div class="example-card" onclick="loadExample('hello')">
+        <div class="example-title">Hello World</div>
+        <div class="example-desc">Basic greeting program</div>
+      </div>
+      <div class="example-card" onclick="loadExample('calculator')">
+        <div class="example-title">Calculator</div>
+        <div class="example-desc">Math operations</div>
+      </div>
+      <div class="example-card" onclick="loadExample('conditions')">
+        <div class="example-title">Conditions</div>
+        <div class="example-desc">If-else statements</div>
+      </div>
+      <div class="example-card" onclick="loadExample('loop')">
+        <div class="example-title">Loop</div>
+        <div class="example-desc">While loop example</div>
+      </div>
+      <div class="example-card" onclick="loadExample('variables')">
+        <div class="example-title">Variables</div>
+        <div class="example-desc">Variable operations</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="editor-pane">
+      <div class="editor-header">
+        <div class="section-title">Code Editor</div>
+        <div class="header-actions">
+          <button class="view-source-btn" onclick="viewSource()">View Source</button>
+          <button class="run-btn" onclick="runKudari()">Execute ▶</button>
+        </div>
+      </div>
+      <div class="editor-container">
+        <textarea id="code" spellcheck="false">// Hello World in KudariLang
+kudari shuru karo
+
+ginti naam kar do "Duniya"
+bolo "Namaste " + naam
+bolo "KudariLang mein aapka swagat hai!"
+
+ginti x kar do 10
+ginti y kar do 20
+ginti result kar do x add karo y
+bolo "10 + 20 = " + result
+
+kudari khatam karo</textarea>
+        <div id="highlighted-code"></div>
+      </div>
+    </div>
+    <div class="output-pane">
+      <div class="section-title">Program Output</div>
+      <div id="output">Click "Execute" to run your KudariLang code!</div>
+    </div>
+  </div>
+  <footer class="copyright-footer">
+    <p class="copyright">© 2022 
+      <a href="https://in.linkedin.com/in/ikuldeepkumawat" target="_blank">Kuldeep Kumawat</a>, 
+      <a href="https://in.linkedin.com/in/chetan-choudhary-30192b115" target="_blank">Chetan Choudhary</a>. All rights reserved.
+    </p>
+  </footer>
+  <script src="./assets/js/script.js" defer="defer"></script>
+</body>
+</html>
